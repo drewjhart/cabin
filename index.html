@@ -1,0 +1,139 @@
+<html lang="en">
+<style>
+	.modalBase{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top:0;
+		left:0;
+		margin: 0;
+   		overflow: hidden;
+		z-index:1;
+		background-image: url("../images/modalBackground2.jpg");
+		background-size: cover;
+		background-color:black;
+	}
+	.modalHeader
+	{
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		top:45%;
+		right: 25%;
+		font-family: "Century Gothic";
+		font-weight: 400;
+		font-size: 400%;
+		color:white;
+		z-index:2;
+	}
+	.modalBox {
+		position: absolute;
+		width: 50%;
+		height: 80%;
+		top: 10%;
+		right:25%;
+		margin: 0;
+		text-align: center;
+		z-index: 2;
+		display:block;
+		background-color: rgb(255, 255, 255);
+		opacity: 0.9;
+ 		margin: auto;
+  	}
+	.modalText {
+		position: absolute;
+		text-align: left;
+		width: 40%;
+		height: 50%;
+		top:55%;
+		right: 35%;
+		margin: 0;
+		z-index: 3;
+		display:block;
+		font-family: "Century Gothic";
+		font-size: 100%;
+		color:white;
+	}
+	.modalLoadingText{
+		position: absolute;
+		text-align: left;
+		width: 10%;
+		height: 1%;
+		top:65%;
+		right: 65%;
+		margin: 0;
+		z-index: 3;
+		font-family: "Century Gothic";
+		color:white;
+		display:block;
+	}
+	.modalProgressBorder{
+		background-color:white;
+		opacity:0.5;
+		position: absolute;
+		text-align: left;
+		width: 10%;
+		height: 2%;
+		top:65%;
+		right: 65%;
+		margin: 0;
+		z-index: 3;
+		display:block;
+	}
+	.modalProgressBar{
+		background-color:white;
+		position: absolute;
+		width: 1%;
+		height: 2%;
+		top:65%;
+		left: 25%;
+		margin: 0;
+		z-index: 3;
+	}
+	.modalLoading {
+		position: absolute;
+		text-align: center;
+		top: 55%;
+		right: 50%;
+		z-index: 3;
+		display:block;
+		color:rgb(0, 0, 0);
+		margin: 0;
+		display:block;
+	}
+	.modalEnterText{
+		position: absolute;
+		text-align: left;
+		width: 10%;
+		height: 1%;
+		top:65%;
+		right: 65%;
+		margin: 0;
+		z-index: 3;
+		font-family: "Century Gothic";
+		color:white;
+		display: none;
+	}
+	.canvasClass{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	
+</style>
+<body>
+	<div id="modalFrame" class="modalBase">
+		<div class="modalHeader">A Cabin in the Woods</div>
+		<div class ="modalText"> A friend of mine was looking for a tiny home in which he could live semi-nomadically. As such, the plan of the house was sized to align with an oversized transportation permit. Program includes space for a kitchen, a small living area, storage and a bed in the loft.  </div>
+		<div id="modalBarBorder" class="modalProgressBorder"></div>
+		<div id="modalBar" class="modalProgressBar"></div>
+		<div id ="modalLoadText" class="modalLoadingText">Loading...</div>
+		<div id="modalEnter" class="modalEnterText"> Click here to view. </div>
+ 	</div>
+    <canvas id = "c" class="canvasClass"></canvas>
+</body>
+
+<script src="cabin.js" type="module">
+  
+</script>
+</html>
