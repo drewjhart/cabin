@@ -54,12 +54,31 @@
 		font-size: 100%;
 		color:white;
 	}
+	.linkText {
+		position: relative;
+		z-index: 3;
+		font-family: "Century Gothic";
+		font-size: 100%;
+		color:white;
+	}
+	.creditText{
+		position: absolute;
+		text-align: right;
+		bottom:3%;
+		right: 3%;
+		margin: 0;
+		font-size: 75%;
+		z-index: 3;
+		font-family: "Century Gothic";
+		color:white;
+		display:block;
+	}
 	.modalLoadingText{
 		position: absolute;
 		text-align: left;
 		width: 10%;
 		height: 1%;
-		top:65%;
+		top:70%;
 		right: 65%;
 		margin: 0;
 		z-index: 3;
@@ -74,7 +93,7 @@
 		text-align: left;
 		width: 10%;
 		height: 2%;
-		top:65%;
+		top:70%;
 		right: 65%;
 		margin: 0;
 		z-index: 3;
@@ -85,7 +104,7 @@
 		position: absolute;
 		width: 1%;
 		height: 2%;
-		top:65%;
+		top:70%;
 		left: 25%;
 		margin: 0;
 		z-index: 3;
@@ -106,7 +125,7 @@
 		text-align: left;
 		width: 10%;
 		height: 1%;
-		top:65%;
+		top:70%;
 		right: 65%;
 		margin: 0;
 		z-index: 3;
@@ -124,11 +143,15 @@
 <body>
 	<div id="modalFrame" class="modalBase">
 		<div class="modalHeader">A Cabin in the Woods</div>
-		<div class ="modalText"> A friend of mine was looking for a tiny home in which he could live semi-nomadically. As such, the plan of the house was sized to align with an oversized transportation permit. Program includes space for a kitchen, a small living area, storage and a bed in the loft.  </div>
+		<div class ="modalText"> A friend of mine was looking for a tiny home in which he could live semi-nomadically. As such, the plan of the house was sized to align with an oversized transportation permit. Program includes space for a kitchen, a small living area, storage and a bed in the loft. 
+		<br> 
+		<br> This is built on three.js and imports Rhino geometry.
+		</div>
 		<div id="modalBarBorder" class="modalProgressBorder"></div>
 		<div id="modalBar" class="modalProgressBar"></div>
 		<div id ="modalLoadText" class="modalLoadingText">Loading...</div>
-		<div id="modalEnter" class="modalEnterText"> Click here to view. </div>
+		<div id="modalEnter" class="modalEnterText"> Click here to start. </div>
+		<a href="https://www.jelly-green.com/past-work" class="creditText"> Painting by Jelly Green</a>
  	</div>
     <canvas id = "c" class="canvasClass"></canvas>
 </body>
