@@ -75,11 +75,11 @@
 	}
 	.modalLoadingText{
 		position: absolute;
-		text-align: left;
-		width: 10%;
+		text-align: center;
+		width: 40%;
 		height: 1%;
 		top:70%;
-		right: 65%;
+		left: 25%;
 		margin: 0;
 		z-index: 3;
 		font-family: "Century Gothic";
@@ -91,16 +91,17 @@
 		opacity:0.5;
 		position: absolute;
 		text-align: left;
-		width: 10%;
+		width: 40%;
 		height: 2%;
 		top:70%;
-		right: 65%;
+		left: 25%;
 		margin: 0;
 		z-index: 3;
 		display:block;
 	}
 	.modalProgressBar{
 		background-color:white;
+		opacity: 0.75;
 		position: absolute;
 		width: 1%;
 		height: 2%;
@@ -132,6 +133,8 @@
 		font-family: "Century Gothic";
 		color:white;
 		display: none;
+		text-decoration: underline;
+		cursor: pointer;
 	}
 	.canvasClass{
 		position: absolute;
@@ -145,11 +148,11 @@
 		<div class="modalHeader">A Cabin in the Woods</div>
 		<div class ="modalText"> A friend of mine was looking for a tiny home in which he could live semi-nomadically. As such, the plan of the house was sized to align with an oversized transportation permit. Program includes space for a kitchen, a small living area, storage and a bed in the loft. 
 		<br> 
-		<br> This is built on three.js and imports Rhino geometry.
+		<br> This is built on three.js and imports Rhino geometry. Code is <a href="https://github.com/drewjhart/cabin" style="color:#ffffff;">here.</a>
 		</div>
 		<div id="modalBarBorder" class="modalProgressBorder"></div>
 		<div id="modalBar" class="modalProgressBar"></div>
-		<div id ="modalLoadText" class="modalLoadingText">Loading...</div>
+		<div id ="modalLoadText" class="modalLoadingText">Loading...</div> 
 		<div id="modalEnter" class="modalEnterText"> Click here to start. </div>
 		<a href="https://www.jelly-green.com/past-work" class="creditText"> Painting by Jelly Green</a>
  	</div>
